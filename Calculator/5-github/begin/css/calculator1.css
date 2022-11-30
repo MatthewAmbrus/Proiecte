@@ -1,0 +1,52 @@
+html{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+}
+.wrapper{
+    width: 400px;
+    background-color: black;
+    color:white;
+}
+.screen{
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: right;
+    padding:20px 5px;
+}
+.calc-button-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:0.5%;
+}
+.calc-button{
+    display: flex;
+    height: 100px;
+    font-size: 50px;
+    background-color: aliceblue;
+    color:black;
+    flex-basis:24.5%;
+    cursor: pointer;
+    align-items:center;
+    justify-content: center;
+}
+.calc-button:last-child{
+    background-color: orange;
+    color:white;
+}
+
+.calc-button:hover{
+    background-color: aqua;
+}
+.calc-button:active{
+    background-color: red;
+}
+
+.double{
+    flex-basis: 50%;
+}
+.triple{
+    flex-basis: 75%;
+}

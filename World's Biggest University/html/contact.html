@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>World Biggest University</title>
+        <script src="https://kit.fontawesome.com/b2c406c268.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- header -->
+        <section class="sub-header">
+            <nav>
+                <a href="html/index.html"><img src="../eduford_img/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()" ></i>
+            </nav>
+                <h1>Contact Us</h1>
+        </section>
+
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43589.385255420915!2d26.33948510233472!3d46.935423619177996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47355449968fa865%3A0x52d3dedb49e2d0b8!2sPiatra%20Neam%C8%9B!5e0!3m2!1sro!2sro!4v1658300570482!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div >
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>XYZ Road, ABC Building</h5>
+                            <p>Neamt, Piatra Neamt</p>
+                        </span>
+                    </div>
+                    <div >
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>+40 728 289 774</h5>
+                            <p>Monday to Saturday, 10Am ti 6PM</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h5>metroservice@metros.ro</h5>
+                            <p>Email us</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-col">
+
+                    <form action="form-handler.php" method="post">
+                        <input type="text" name="name" id="" placeholder="Enter your name" required>
+                        <input type="email" name="email" id="" placeholder="Enter email address" required>
+                        <input type="text" name="subject" id="" placeholder="Enter your subject" required>
+                        <textarea name="message" rows="8" placeholder="Message"></textarea>
+                        <button type="submit" class="hero-btn red-btn">Send Message</button>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        
+
+
+        <!-- Footer -->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p> 
+                At our University we take our students to the next level in their lives and in their careers. <br>
+                Conect with us on our social media accounts to learn more about our results and our student experience.
+            </p>
+            <div class="icons">
+                <i class="fa-brands fa-facebook-square"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+            <p>Made with <i class="fa-regular fa-heart"></i> by Matthew Alexander</p>
+        </section>
+
+        <!---- JavaScript for Toggle Menu ---->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0px";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
